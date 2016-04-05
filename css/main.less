@@ -42,38 +42,6 @@
     font-style: normal;
     font-weight: normal;
 }
-/* font-family: "MyriadProBoldItalic"; */
-@font-face {
-    font-family: "MyriadProBoldItalic";
-    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
-    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
-    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-
-/*=====  End of Общие стили  ======*/
-
-
-/*==============================
-=            Header            =
-==============================*/
-
-.header .phone .phone__icon {
-    float: left;;;
-}
-/* font-family: "MyriadProSemiBoldItalic"; */
-@font-face {
-    font-family: "MyriadProSemiBoldItalic";
-    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
-    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
-    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
 
 /*=====  End of Подключаемые шрифты  ======*/
 
@@ -105,14 +73,36 @@ body {
 		background: #ffca28;
 		color: #951a49;
 	}
+
+	&.invert--btn {
+		background: #ffca28;
+		color: #951a49;
+
+		&:hover {
+		background: #951a49;
+		color: #ffca28;
+		}	
+	}
 }
 
 .red--btn--radius {
-	border-radius: 20px;
+	border-radius: 40px;
 }
 
 .red--text {
 	color: #951a49;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.left-align {
+	text-align: left;
+}
+
+a {
+	.transition--effect;
 }
 
 /*=====  End of Общие стили  ======*/
@@ -172,6 +162,7 @@ body {
 				text-align: center;
 				float: right;
 				margin-right: 32px;
+				white-space: nowrap;
 			}
 		}
 
@@ -203,3 +194,162 @@ body {
 }
 
 /*=====  End of Header  ======*/
+
+
+/*==============================
+=            Banner            =
+==============================*/
+
+.banner {
+	width: 100%;
+	height: 537px;
+	position: relative;
+
+	.banner__img {
+		 width: 100%;
+	    height: 537px;
+	    max-height: 537px;
+	    background-size:cover;
+		 position: absolute;
+		 z-index: 0;
+	}
+
+	.banner-nav {
+		background: rgba(255, 255, 255, 0.45);
+		height: 56px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+		.banner-menu {
+			padding: 0px;
+			list-style: none;
+			display: table;
+			margin: 0 auto;
+			height: 100%;
+			width: 1140px;
+			.menu__item {
+				display: table-cell;
+				vertical-align: middle;
+
+				&.left-align {
+					padding-left: 25px;
+				}
+
+				&.right-align {
+					padding-right: 25px;
+				}
+
+				.menu__link {
+					color: #fff;
+					font-size: 14px;
+					font-family: "MyriadProSemiBold";
+					text-transform: uppercase;
+					text-decoration: none;
+					&:hover {
+						color: #f3bb11;
+					}
+
+					&:active {
+						color: #f3bb11;
+					}
+				}
+			}
+		}
+	}
+	.container-fixed {
+		position: relative;
+		height: 100%;
+		font-family: "MyriadProRegular";
+		.right-block {
+			right: 0;
+		}
+
+		.left-block {
+			left: 0;
+		}
+
+		h1 {
+			color: #ffffff;
+			font-size: 64px;
+			font-weight: normal;
+			text-transform: uppercase;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		h3 {
+			color: #ffffff;
+			font-size: 48px;
+			font-weight: normal;
+			text-transform: uppercase;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		p {
+			font-size: 16px;
+			color: #fff;
+		}
+
+		.text-block {
+			position: absolute;
+			left: 0;
+			top: 145px;
+			width: 500px;
+
+			.text-block__btn {
+				margin-top: 35px;
+				padding: 16px 48px;
+				.red--btn--radius;
+				text-transform: uppercase;
+				font-size: 16px;
+				white-space: nowrap;
+			}
+		}
+
+		.stock-block {
+			position: absolute;
+			top: 127px;
+			width: 360px;
+
+			.stock-block__btn {
+				padding: 14px 26px;
+				.red--btn--radius;
+				text-transform: uppercase;
+			}
+
+			.title {
+				&:after {
+				content: '';
+				background: url("../img/banner-news__icon.png") no-repeat;
+				width: 29px;
+				height: 33px;
+				position: absolute;
+				top: 13px;
+				margin-left: 23px;
+				}
+			}
+
+		}
+
+		.news-block {
+			position: absolute;
+			top: 325px;
+			width: 360px;
+			.more__link {
+				font-size: 14px;
+				color: #ffca28;
+
+				&:hover {
+					color: #6a6a6a;
+				}
+
+				&:active {
+					color: #6a6a6a;
+				}
+			}
+		}
+	}
+}
+
