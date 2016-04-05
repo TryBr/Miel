@@ -1,0 +1,205 @@
+/*===========================================
+=            Подключаемые шрифты            =
+===========================================*/
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProItalic"; */
+@font-face {
+    font-family: "MyriadProItalic";
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+    font-family: "MyriadProBoldItalic";
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*=====  End of Общие стили  ======*/
+
+
+/*==============================
+=            Header            =
+==============================*/
+
+.header .phone .phone__icon {
+    float: left;;;
+}
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+    font-family: "MyriadProSemiBoldItalic";
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*=====  End of Подключаемые шрифты  ======*/
+
+
+/*===================================
+=            Общие стили            =
+===================================*/
+
+body {
+	font-family: "MyriadProRegular";
+}
+
+.container-fixed {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.transition--effect {
+	transition: all 0.2s;
+}
+
+.red--btn {
+	background: #951a49;
+	color: #ffca28;
+	border: none;
+	font-family: "MyriadProSemiBold";
+	.transition--effect;
+	&:hover {
+		background: #ffca28;
+		color: #951a49;
+	}
+}
+
+.red--btn--radius {
+	border-radius: 20px;
+}
+
+.red--text {
+	color: #951a49;
+}
+
+/*=====  End of Общие стили  ======*/
+
+
+/*==============================
+=            Header            =
+==============================*/
+
+.header {
+	height: 88px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#951a49+0,951a49+50,e6e8e9+50,e6e8e9+100 */
+	background: #951a49; /* Old browsers */
+	background: -moz-linear-gradient(left,  #951a49 0%, #951a49 50%, #e6e8e9 50%, #e6e8e9 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #951a49 0%,#951a49 50%,#e6e8e9 50%,#e6e8e9 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #951a49 0%,#951a49 50%,#e6e8e9 50%,#e6e8e9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#951a49', endColorstr='#e6e8e9',GradientType=1 ); /* IE6-9 */ /* IE6-9 */
+	.container-fixed {
+		background: #e9eaea;
+			.logo {
+			width: 109px;
+			float: left;
+			height: 88px;
+
+			.logo__link {
+				display: block;
+				.logo__img {
+					
+				}	
+			}
+		}
+
+		.company-slogan {
+			width: 300px;
+			float: left;
+			.slogan__text {
+				font-family: "MyriadProBold";
+				text-transform: uppercase;
+				padding-top: 23px;
+				text-align: left;
+				padding-left: 23px;
+				display: block;
+			}
+		}
+
+		.req-call {
+			width: 440px;
+			float: left;
+			margin-top: 23px;
+
+			.req-call__btn {
+				font-size: 14px;
+				.red--btn--radius;
+				text-transform: uppercase;
+				height: 40px;
+				width: 198px;
+				text-align: center;
+				float: right;
+				margin-right: 32px;
+			}
+		}
+
+		.phone {
+			width: 291px;padding-top:30px;
+			position: relative;
+			text-align: right;
+			float: left;
+
+			.phone__number {
+				font-family: "MyriadProSemiBold";
+				font-size: 24px;
+				text-transform: uppercase;
+				display: block;
+				float: right;
+
+				&:before {
+					content: '';
+					background: url("../img/phone__icon--yellow.png");
+					width: 32px;
+					height: 32px;
+					display: block;
+					position: absolute;
+					margin-left: -48px;
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Header  ======*/
