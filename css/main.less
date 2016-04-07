@@ -742,18 +742,37 @@ button {
     background-position: center bottom;
     padding-top: 50px;
     margin-top: 100px;
-    background-size: contain;
+    background-size: cover;
 }
 
 .years-timeline {
 	padding: 0px;
     margin-top: 60px;
 	.ui-tabs-nav {
-		background: url(../img/red__dot.jpg) repeat-x #eceff1;
+		background: url(../img/red__dot.jpg) repeat-x;
     	background-position: 0% 6px;
     	padding: 0px !important;
     	display: table;
     	margin: 0 auto !important;
+    	position: relative;
+
+	    .gray-cover {
+		    height: 1px;
+		    background: #eceff1;
+		    width: 25px;
+		    position: absolute;
+
+	    	&.left {
+	    		top: 6px;
+	    		left: 0px;
+	    	}
+
+	    	&.right {
+	    		top: 6px;
+	    		right: 0px;
+	    	}
+	    }
+
 
     	li {
 			outline: none;
@@ -920,3 +939,98 @@ button {
 }
 
 /*=====  End of FOOTER  ======*/
+
+
+/*==============================
+=            POPUPS            =
+==============================*/
+
+.fancybox-skin {
+	padding: 0px !important;
+	box-shadow: none !important;
+	overflow: hidden;
+}
+
+.fancybox-close {
+	background: url("../img/close__btn.png") no-repeat;
+	width: 23px;
+	height: 23px;
+	top: 40px;
+    right: 30px;
+
+    &:hover {
+		top: 35px;
+    }
+}
+
+.req-call-popup {
+	width: 680px;
+	height: 310px;
+	border-radius: 5px;
+	background: #ffffff;
+
+	.left-side {
+		background: #eceff1;
+		width: 340px;
+		height: 100%;
+		float: left;
+		text-align: center;
+
+		.title {
+		font-family: "MyriadProSemiBold";
+		font-size: 32px;
+		.red--text;
+		margin-bottom: 35px;
+		margin-top: 35px;
+		}
+
+		/*=============================================
+		=            Стили для placeholder            =
+		=============================================*/
+
+		input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
+		input::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
+		input:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
+		input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
+		input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
+		input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
+		input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
+		input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
+
+		/*=====  End of Стили для placeholder  ======*/
+
+		.text__field {
+			width: 262px;
+			height: 40px;
+			background: #fff;
+			border: none;
+			border-radius: 20px;
+			margin-bottom: 16px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.req-call__btn {
+			width: 262px;
+			height: 48px;
+			border-radius: 30px;
+		}
+	}
+
+	.right-side {
+	    width: 300px;
+	    float: left;
+	    padding-left: 40px;
+	    text-align: left;
+	    padding-top: 100px;
+	    line-height: 2;
+		p {
+			margin: 0px;
+			color: #55626a;
+			font-size: 16px;
+			font-family: "MyriadProRegular";
+		}
+	}
+}
+
+/*=====  End of POPUPS  ======*/

@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/owl.transitions.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -41,7 +42,7 @@
                <!-- SLOGAN END -->
                <!-- REQUEST CALL & PHONE BGN -->
                <div class="req-call">
-                   <button class="req-call__btn red--btn">
+                   <button class="req-call__btn red--btn fancybox" data-fancybox-href="#req-call-popup">
                         Заказать звонок
                    </button>
                </div>
@@ -392,6 +393,9 @@
                 <p>агентство недвижимости «Миэль» ни раз получало награды за качественную и профессиональную работу</p>
                 <div class="years-timeline" id="timeline">
                 <ul>
+                    <div class="gray-cover left">
+                        
+                    </div>
                     <li>
                         <a href="#tabs-1">
                             <div class="point"></div>
@@ -494,6 +498,9 @@
                             <div class="year">2016</div>
                         </a>
                     </li>
+                    <div class="gray-cover right">
+                        
+                    </div>
                 </ul>
                 <div id="tabs-1" class="content">
                    <ul>
@@ -646,9 +653,28 @@
             </div>
         </footer>
         <!-- FOOTER END -->
+        <!-- POPUP WINDOW BGN -->
+        <div class="req-call-popup" id="req-call-popup">
+            <div class="left-side">
+                <div class="title">Заказать звонок</div>
+                <form action="" class="popup__form">
+                    <input type="text" class="text__field" placeholder="Ваше имя" required="true"><br>
+                    <input type="text" class="text__field" placeholder="Ваш телефон или Email" required="true"><br>
+                    <button class="req-call__btn red--btn invert--btn">Заказать звонок</button>
+                </form>
+            </div>
+            <div class="right-side">
+                <p>
+                    Оставьте свои контактные данные.<br>
+                    Наш менеджер свяжется с Вами в<br>ближайшее время и ответит на все<br>Ваши вопросы.
+                </p>
+            </div>
+        </div>
+        <!-- POPUP WINDOW END -->
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/jquery-ui.min.js"></script>
         <script src="js/vendor/owl.carousel.min.js"></script>
+        <script src="js/vendor/jquery.fancybox.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
