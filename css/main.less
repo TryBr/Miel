@@ -538,8 +538,8 @@ button {
 			=============================================*/
 
 			input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
-			input::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
-			input:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
+			input::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 40px;}
+			input:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 40px;}
 			input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
 			input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
 			input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
@@ -704,6 +704,7 @@ button {
 				    margin-left: 42px;
 				    color: #951a49;
 				    line-height: 2;	
+				    position: relative;
 				    .red--text;
 
 					&:before {
@@ -714,6 +715,7 @@ button {
 						display: block;
 						position: absolute;
 						margin-left: 0px;
+    					top: -5px;
 					}
 
 					&:hover {
@@ -963,6 +965,18 @@ button {
     }
 }
 
+.fancybox-overlay {
+    background: rgba(59, 0, 23, 0.7) !important;
+}
+
+
+.popup-window {
+	display: none;
+}
+
+
+
+// Заказать звонок
 .req-call-popup {
 	width: 680px;
 	height: 310px;
@@ -989,8 +1003,8 @@ button {
 		=============================================*/
 
 		input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
-		input::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
-		input:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
+		input::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 40px;}
+		input:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 40px;}
 		input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
 		input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
 		input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
@@ -1029,6 +1043,192 @@ button {
 			color: #55626a;
 			font-size: 16px;
 			font-family: "MyriadProRegular";
+		}
+	}
+}
+
+// Объект новостройка и вторичка
+
+.object-popup {
+	width: 1010px;
+	border-radius: 5px;
+	background: #eceff1;
+		.left-side {
+	    width: 595px;
+	    height: 100%;
+	    float: left;
+	    text-align: left;
+	    padding-left: 30px;
+	    padding-right: 45px;
+	    padding-bottom: 20px;
+	    background: #fff;
+	    min-height: 400px;
+		.title {
+			font-family: "MyriadProSemiBold";
+			font-size: 32px;
+			.red--text;
+			margin-bottom: 35px;
+			margin-top: 35px;
+		}
+
+		p {
+			color: #55626a;
+			font-size: 14px;
+			line-height: 1.8;
+		}
+
+		.map {
+
+			&>ymaps {
+				    border-radius: 10px;
+			}
+		}
+
+		.options-tables {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			.options__table {
+				width: 50%;
+	    		float: left;
+	    		&.table-n1 {
+	    			width: 45%;
+    				margin-right: 5%;
+	    		}
+
+	    		tr {
+	    			border-top: 1px solid #f5f7f8;
+	    			border-bottom: 1px solid #f5f7f8;
+					.transition--effect;
+	    			&:nth-child(even) {
+	    				background: #f5f7f8;
+	    			}
+
+	    			td {
+	    				padding: 10px 0px;
+	    			}
+
+	    			.name {
+						color: #55626a;
+						font-size: 10px;
+						font-family: "MyriadProSemiBold";
+						text-transform: uppercase;
+						padding-left: 10px;
+	    			}
+
+	    			.value {
+						color: #55626a;
+						font-size: 12px;
+	    			}
+
+	    			&:hover {
+	    				&:nth-child(odd) {
+	    					background: darken(#fff, 2%);
+	    				}
+	    			}
+	    		}
+			}
+		}
+	}
+
+	.right-side {
+	    width: 300px;
+	    float: left;
+	    padding-left: 40px;
+	    text-align: left;
+	    padding-top: 110px;
+	    line-height: 2;
+	    height: 100%;
+	    padding-bottom: 20px;
+	    background: #eceff1;
+		p {
+			margin: 0px;
+			color: #55626a;
+			font-size: 14px;
+			font-family: "MyriadProRegular";
+			margin-bottom: 20px;
+		}
+
+				/*=============================================
+		=            Стили для placeholder            =
+		=============================================*/
+
+		input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
+		input::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 40px;}
+		input:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 40px;}
+		input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase; line-height: 2;}
+		input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
+		input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
+		input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
+		input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.2s ease; color: #8b737c; font-size: 12px; text-transform: uppercase;}
+
+		/*=====  End of Стили для placeholder  ======*/
+
+		.text__field {
+			width: 262px;
+			height: 40px;
+			background: #fff;
+			border: none;
+			border-radius: 20px;
+			margin-bottom: 16px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.req-call__btn {
+			width: 262px;
+			height: 48px;
+			border-radius: 30px;
+		}
+		
+
+	}
+
+	.lightSlider li {
+		img {
+			width: 100%;
+		}
+	}
+
+	.lSSlideOuter .lSPager.lSGallery img {
+		border-radius: 5px;
+	}
+
+	.lSSlideOuter.vertical .lSAction > .lSPrev {
+	    background: url(../img/gallery-nav-prev.png) no-repeat;
+	    width: 34px;
+	    height: 64px;
+	    bottom: auto;
+	    top: 120px;
+	    left: 14px;
+	    opacity: 1;
+	}
+
+	.lSSlideOuter.vertical .lSAction > .lSNext {
+	    background: url(../img/gallery-nav-next.png) no-repeat;
+	    width: 34px;
+	    height: 64px;
+	    bottom: auto;
+	    top: 120px;
+	    right: 0px;
+	    opacity: 1;
+	    left: auto;
+	}
+
+	.lSSlideOuter .lSPager.lSGallery li {
+		position: relative;
+		cursor: pointer;
+	}
+
+	.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
+		&:before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			background: rgba(149, 26, 73, 0.5);
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			margin: 0 auto;
 		}
 	}
 }

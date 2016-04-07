@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/owl.transitions.css">
         <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/lightslider.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -61,10 +62,10 @@
             <nav class="banner-nav">
                 <ul class="banner-menu">
                     <li class="menu__item right-align">            
-                        <a href="" class="menu__link">новострое строящееся жилье в челябинске</a>
+                        <a href="#view-object-popup" class="menu__link fancybox">новострое строящееся жилье в челябинске</a>
                     </li>
                     <li class="menu__item left-align">
-                        <a href="" class="menu__link">вторичная недвиижмость в челябинске</a>
+                        <a href="#view-object-popup-2" class="menu__link fancybox">вторичная недвижимость в челябинске</a>
                     </li>
                 </ul>
             </nav>
@@ -653,8 +654,9 @@
             </div>
         </footer>
         <!-- FOOTER END -->
-        <!-- POPUP WINDOW BGN -->
-        <div class="req-call-popup" id="req-call-popup">
+        <!-- POPUP WINDOWS BGN -->
+        <!-- Заказать звонок -->
+        <div class="req-call-popup popup-window clearfix" id="req-call-popup">
             <div class="left-side">
                 <div class="title">Заказать звонок</div>
                 <form action="" class="popup__form">
@@ -670,11 +672,105 @@
                 </p>
             </div>
         </div>
-        <!-- POPUP WINDOW END -->
+
+
+        <!-- Новостройки -->
+        <div class="object-popup popup-window clearfix" id="view-object-popup">
+            <div class="left-side">
+                <div class="title">ЖК «София»</div>
+                <p>
+                    Жилой комплекс «София» является новостройкой Фрунзенского района и возводится в окружении зеленых парков и водного пространства.Вокруг комплекса расположились красивый и современный Парк Интернационалистов  с белокаменной очаровательной церковью, а несколько в стороне система искусственных водоёмов - прудов.<br>
+                    Участок под плановое строительство этой Новостройки Фрунзенского района сформирован  на незначительном расстоянии от главных улиц микрорайона Купчино, к каковым относятся Софийская, Бухарестская, улица Димитрова, а также  Южное шоссе. 
+                    В недалёкой перспективе в интервале пешеходной прогулки от комплекса будет построена планируемая ныне станция метрополитена  «Проспект Славы».
+                </p>
+                <div class="map">
+                    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=juqKRet4zIaaFnKg59cHygcF4mZ3l52M&width=594&height=300&lang=ru_RU&sourceType=constructor"></script>
+                </div>
+            </div>
+            <div class="right-side">
+                <p>
+                    Если Вас заинтересовал этот объект, оставьте свои контактные данные и наш менеджер свяжется с Вами в ближайшее время.
+                </p>
+                <form action="" class="popup__form">
+                    <input type="text" class="text__field" placeholder="Ваше имя" required="true"><br>
+                    <input type="text" class="text__field" placeholder="Ваш телефон или Email" required="true"><br>
+                    <button class="req-call__btn red--btn invert--btn">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Вторичное жилье -->
+        <div class="object-popup popup-window clearfix" id="view-object-popup-2">
+            <div class="left-side">
+                <div class="title">ул.Агалакова, 33</div>
+                <!-- GALLERY BGN -->
+                <ul id="vertical">
+                  <li data-thumb="img/flat-photo-1.jpg">
+                    <img src="img/flat-photo-1.jpg" />
+                  </li>
+                  <li data-thumb="img/flat-photo-1.jpg">
+                    <img src="img/flat-photo-1.jpg" />
+                  </li>
+                  <li data-thumb="img/flat-photo-1.jpg">
+                    <img src="img/flat-photo-1.jpg" />
+                  </li>
+                </ul>
+                <!-- GALLERY END -->
+
+                <!-- OPTION TABLES BGN -->
+                <div class="options-tables clearfix">
+                    <table class="options__table table-n1">
+                        <tr>
+                            <td class="name">Район</td>
+                            <td class="value">Ленинский</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Тип</td>
+                            <td class="value">Вторичная недвижимость</td>
+                        </tr>
+                        <tr>
+                            <td class="name">кол-во комнат</td>
+                            <td class="value">3 комнаты</td>
+                        </tr>
+                    </table>
+                    <table class="options__table">
+                        <tr>
+                            <td class="name">Район</td>
+                            <td class="value">Ленинский</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Тип</td>
+                            <td class="value">Вторичная недвижимость</td>
+                        </tr>
+                        <tr>
+                            <td class="name">кол-во комнат</td>
+                            <td class="value">3 комнаты</td>
+                        </tr>
+                    </table>    
+                </div>
+                <!-- OPTIONS TABLES END -->
+                <p>
+                    Продается 3-комнатная квартира в хорошем состоянии общей площадью 69,2 кв. метра на 6 этаже 10-ти этажного дома. 121 серия с раздельными комнатами, остекленная лоджия, средний этаж. Дом удачно расположен внутри жилого квартала в центра Ленинского района вдали от крупных автомагистралей.<br>
+                    Во дворе дома детский сад, до остановки общественного транспорта несколько минут, рядом есть и продуктовые и промтоварные магазины. Школа в шаговой доступности. 
+                </p>
+            </div>
+            <div class="right-side">
+                <p>
+                    Если Вас заинтересовал этот объект, оставьте свои контактные данные и наш менеджер свяжется с Вами в ближайшее время.
+                </p>
+                <form action="" class="popup__form">
+                    <input type="text" class="text__field" placeholder="Ваше имя" required="true"><br>
+                    <input type="text" class="text__field" placeholder="Ваш телефон или Email" required="true"><br>
+                    <button class="req-call__btn red--btn invert--btn">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+        <!-- POPUP WINDOWS END -->
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/jquery-ui.min.js"></script>
         <script src="js/vendor/owl.carousel.min.js"></script>
         <script src="js/vendor/jquery.fancybox.js"></script>
+        <script src="js/vendor/lightslider.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
