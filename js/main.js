@@ -40,3 +40,5 @@ $(document).ready(function() {
     speed: 600
   });  
 });
+
+$.stellar();

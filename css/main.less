@@ -43,6 +43,10 @@
     font-weight: normal;
 }
 
+/* Open Sans */
+@OpenSans: 'Open Sans', sans-serif;
+
+
 /*=====  End of Подключаемые шрифты  ======*/
 
 
@@ -324,6 +328,7 @@ button {
 		p {
 			font-size: 16px;
 			color: #fff;
+			font-family: @OpenSans;
 		}
 
 		.text-block {
@@ -405,7 +410,7 @@ button {
 	}
 
 	p {
-		color: 000000;
+		color: #000000;
 		font-size: 14px;
 		font-family: "MyriadProRegular";
 		text-transform: uppercase;
@@ -484,25 +489,21 @@ button {
 
 .application-form {
 	background: url(../img/application-form-bg.jpg) no-repeat;
-    height: 256px;
+    height: 296px;
     padding-top: 40px;
     width: 100%;
     background-size: 100%;
 
-    &.pre-footer {
-    	margin-bottom: 0;
-    	height: 216px
-    }
 
     .left-side {
 		width: 602px;
 		float: left;
 		padding-left: 98px;
 		.title {
-			font-size: 56px;
+			font-size: 48px;
 			color: #ffffff;
 			text-transform: uppercase;
-			font-family: "MyriadProRegular";
+			font-family: @OpenSans;
 			text-align: left;
 			line-height: 1.2;
 		}
@@ -514,6 +515,7 @@ button {
 		    padding-left: 50px;
 		    margin-top: 20px;
 		    line-height: 2;
+		    font-family: @OpenSans;
 
 			&:before {
 				content: '';
@@ -566,6 +568,17 @@ button {
 			}
 		}
     }
+
+
+
+    &.pre-footer {
+    	margin-bottom: 0;
+    	height: 216px;
+
+    	.left-side {
+    		padding-top: 40px;
+    	}
+    }
 }
 
 /*=====  End of APLICATION FORM  ======*/
@@ -576,7 +589,7 @@ button {
 ====================================*/
 .our-managers {
 	position: relative;
-	margin-top: 20px;
+	margin-top: 80px;
 
 	.managers-carousel {
 		margin-top: 40px;
