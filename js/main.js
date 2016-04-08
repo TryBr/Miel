@@ -1,6 +1,18 @@
-$( "#tabs" ).tabs();
-$( "#tabs2" ).tabs();
-$( "#timeline" ).tabs();
+
+// асинхронная загрузка
+// $(document).ready(function() {
+//     $("head").append("<link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic' rel='stylesheet' type='text/css'>");
+//     $("head").append("<link rel='stylesheet' href='production/styles.min.css'>");
+// });
+
+// табы
+$(document).ready(function() {
+	$( "#tabs" ).tabs();
+	$( "#tabs2" ).tabs();
+	$( "#timeline" ).tabs();
+});
+
+// слайдер менеджеров
 $(document).ready(function() {
  
   $("#owl-demo").owlCarousel({
@@ -21,10 +33,13 @@ $(document).ready(function() {
  
 });
 
+
+// всплывающие окна
 $(document).ready(function() {
     $(".fancybox").fancybox();
-  });
+});
 
+// слайдер объекта
 $(document).ready(function() {
   $('#vertical').lightSlider({
     gallery:true,
@@ -40,5 +55,3 @@ $(document).ready(function() {
     speed: 600
   });  
 });
-
-$.stellar();
