@@ -7,7 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <!-- <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/jquery-ui.min.css">
         <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
@@ -15,10 +16,10 @@
         <link rel="stylesheet" href="css/owl.transitions.css">
         <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" href="css/lightslider.css">
-        <link rel="stylesheet" href="css/main.css"> -->
+        <link rel="stylesheet" href="css/main.css">
         <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="production/styles.min.css">
+
+        <!-- <link rel="stylesheet" href="production/styles.min.css"> -->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -59,7 +60,7 @@
         </header>
         <!-- HEADER END-->
         <!-- BANNER BGN -->
-        <div class="banner clearfix">
+        <div class="banner clearfix" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="100">
             <!-- BANNER MENU BGN -->
             <nav class="banner-nav">
                 <ul class="banner-menu">
@@ -73,14 +74,14 @@
             </nav>
             <!-- BANNER MENU END -->
             <!-- BANNER BACKGROUND BGN -->
-            <img src="img/banner__img.jpg" alt="" class="banner__img">
+            <!-- <img src="img/banner__img.jpg" alt="" class="banner__img"> -->
             <!-- BANNER BACKGROUND END -->
             <!-- BANNER INNER INFO BGN -->
             <div class="container-fixed clearfix">
                 <div class="text-block left-block">
                     <h1>недвижимость<br>челябинска</h1>
                     <p>
-                        Узнать цены и наличие новостроек или вторичного жилья в интересующем вас регионе прямо сейчас.
+                        Узнать цены и наличие новостроек или вторичного жилья<br>в интересующем вас регионе прямо сейчас.
                     </p>
                     <button class="text-block__btn red--btn invert--btn">
                         узнай стоимость своей квартиры
@@ -88,7 +89,7 @@
                 </div>
                 <div class="stock-block right-block">
                     <h3 class="title">Акция</h3>
-                    <p>Подбор, проверка и оформление новостройки при продаже вашей квартиры.</p>
+                    <p>Подбор, проверка и оформление<br>новостройки при продаже вашей квартиры.</p>
                     <button class="stock-block__btn red--btn invert--btn">Заказать</button>
                 </div>
                 <div class="news-block right-block">
@@ -140,7 +141,7 @@
         </div>
         <!-- PROPERTY MAP END -->
         <!-- APLICATION FORM BGN -->
-        <div class="application-form clearfix">
+        <div class="application-form clearfix" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-400">
             <div class="container-fixed clearfix">
                 <div class="left-side">
                    <div class="title">
@@ -148,7 +149,7 @@
                        мы поможем!
                    </div> 
                    <div class="additional__text">
-                       ОСТАВЬТЕ ТЕЛЕФОН, МЫ ПРЕДЛОЖИМ ЕЩЕ ВАРИНАТ
+                       ОСТАВЬТЕ ТЕЛЕФОН, МЫ ПРЕДЛОЖИМ ЕЩЕ ВАРИНАТЫ
                    </div>
                 </div>
                 <div class="right-side">
@@ -162,7 +163,7 @@
         </div>
         <!-- APLICATION FORM END -->
         <!-- PROPERTY MAP BGN -->
-        <div class="property-map clearfix">
+        <div class="property-map clearfix" data-stellar-background-ratio="0.5">
             <div class="container-fixed">
                 <h2>Вторичная недвижимость <span class="red--text">Челябинска</span></h2>
                 <p>
@@ -200,7 +201,7 @@
         </div>
         <!-- PROPERTY MAP END -->
         <!-- OUR MANAGERS BGN -->
-        <div class="our-managers clearfix">
+        <div class="our-managers clearfix" data-stellar-background-ratio="0.5">
             <div class="container-fixed info-block clearfix">
                 <h3>Наши менеджеры</h3>
                 <p>вы всегда можете связаться с нашими менеджерами и задать им интересующий вас вопрос</p>
@@ -595,7 +596,7 @@
         </div>
         <!-- TIMELINE HISTORY END -->
         <!-- CONTACTS BGN -->
-        <div class="contacts clearfix">
+        <div class="contacts clearfix" data-stellar-background-ratio="0.5">
             <div class="container-fixed info-block clearfix">
                 <h3>КАК НАС НАЙТИ</h3>
                 <p>
@@ -622,7 +623,7 @@
         </div>
         <!-- CONTACTS END -->
         <!-- APLICATION FORM BGN -->
-        <div class="application-form pre-footer clearfix">
+        <div class="application-form pre-footer clearfix" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="1400">
             <div class="container-fixed clearfix">
                 <div class="left-side">
                    <div class="title">
@@ -775,5 +776,19 @@
         <script src="js/vendor/lightslider.min.js"></script>
         <script src="js/main.js"></script> -->
         <script src="production/scripts.min.js"></script>
+        <script src="js/vendor/jquery.stellar.js"></script>
+        <script src="js/vendor/jquery.pixlayout.0.9.7.js"></script>
+        <script type="text/javascript">
+            $(function(){
+              $.pixlayout({
+                src: "img/layout.jpg",
+                opacity: 0.5,
+                top: 0,
+                center: true,
+                clip: true,
+                show: true
+              }, "body");
+            });
+        </script>
     </body>
 </html>

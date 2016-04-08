@@ -1,9 +1,7 @@
 
-// асинхронная загрузка
-// $(document).ready(function() {
-//     $("head").append("<link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic' rel='stylesheet' type='text/css'>");
-//     $("head").append("<link rel='stylesheet' href='production/styles.min.css'>");
-// });
+$(document).ready(function() {
+    $.stellar();
+});
 
 // табы
 $(document).ready(function() {
@@ -55,3 +53,4 @@ $(document).ready(function() {
     speed: 600
   });  
 });
+
