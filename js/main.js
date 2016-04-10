@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
-    $.stellar();
+    $.stellar({
+      responsive: true
+    });
 });
 
 // табы
