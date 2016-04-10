@@ -42,6 +42,13 @@
     font-style: normal;
     font-weight: normal;
 }
+/* font-family: "MyriadProLight"; */
+@font-face {
+    font-family: "MyriadProLight";
+    src: url("../fonts/MyriadProLight/MyriadProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 /* Open Sans */
 @OpenSans: 'Open Sans', sans-serif;
@@ -70,6 +77,7 @@ body {
 			color: #000000;
 			font-size: 32px;
 			font-family: "MyriadProBold";
+			letter-spacing: 3px;
 
 		}
 
@@ -77,7 +85,9 @@ body {
 			color: #000000;
 			font-size: 16px;
 			text-transform: uppercase !important;
-			font-family: "MyriadProRegular";
+			font-family: "MyriadProLight", @OpenSans;
+			line-height: 1.3;
+			letter-spacing: 1px;
 		}
 	}
 }
@@ -324,25 +334,26 @@ button {
 			margin-bottom: 0;
 			margin-top: 0;
 			line-height: 1.2;
+			word-break: break-word;
 		}
 
 		h3 {
 			color: #ffffff;
-			font-size: 44px;
+			font-size: 45px;
 			text-transform: uppercase;
 			margin-bottom: 0;
 			margin-top: 0;
 			font-weight: 400;
-			font-family: @OpenSans;
-			padding-left: 4px;
+			font-family: "MyriadProLight", @OpenSans;
+			padding-left: 7px;
 		}
 
 		p {
-			font-size: 14px;
-			color: #fff;
-			font-family: @OpenSans;
-			line-height: 1.7;
-			margin: 0;
+		    font-size: 13.4px;
+		    color: #fff;
+		    font-family: "MyriadProLight", @OpenSans;
+		    line-height: 1.8;
+		    margin: 0;
 		}
 
 		.text-block {
@@ -352,7 +363,7 @@ button {
 			width: 500px;
 
 			.text-block__btn {
-				margin-top: 51px;
+				margin-top: 48px;
 				.red--btn--radius;
 				text-transform: uppercase;
 				font-size: 16px;
@@ -363,22 +374,22 @@ button {
 			}
 
 			p {
-				margin-top: 12px;
+				margin-top: 13px;
 			}
 		}
 
 		.stock-block {
 			position: absolute;
-			top: 114px;
-			width: 368px;
+			top: 118px;
+			width: 369px;
 
 			.stock-block__btn {
 				.red--btn--radius;
 				text-transform: uppercase;
 				width: 132px;
 				height: 40px;
-				margin-top: 13px;
-				margin-left: 9px;
+				margin-top: 8px;
+				margin-left: 10px;
 				font-size: 16px;
 			}
 
@@ -389,35 +400,44 @@ button {
 				width: 29px;
 				height: 33px;
 				position: absolute;
-				top: 13px;
-				margin-left: 19px;
+				top: 9px;
+				margin-left: 16px;
 				}
+			}
+
+			p {
+				line-height: 1.7;
+				padding-left: 10px;
+				font-size: 15.4px;
+				padding-top: 1px;
+				letter-spacing: 0px;
 			}
 
 		}
 
 		.news-block {
 			position: absolute;
-			top: 312px;
-			width: 368px;
+			top: 318px;
+			width: 369px;
 
 			.title {
-				padding-left: 7px;
-				font-size: 43px;;
+				padding-left: 8px;
+				font-size: 43.5px;;
 			}
 
 			p {
 				line-height: 1.8;
 				padding-left: 10px;
 				font-size: 14px;
-				padding-top: 2px;
+				padding-top: 5px;
+				letter-spacing: 1px;
 			}
 			
 			.more__link {
 				font-size: 14px;
 				color: #ffca28;
-				padding-left: 11px;
-				margin-top: 4px;
+				padding-left: 12px;
+				margin-top: 0px;
 				display: block;
 
 				&:hover {
@@ -544,12 +564,13 @@ button {
 		float: left;
 		padding-left: 95px;
 		.title {
-			font-size: 50px;
+			font-size: 52px;
 			color: #ffffff;
 			text-transform: uppercase;
-			font-family: @OpenSans;
+			font-family: "MyriadProLight", @OpenSans;
 			text-align: left;
 			line-height: 1.4;
+			letter-spacing: 1px;
 		}
 
 		.additional__text {
@@ -557,7 +578,7 @@ button {
 		    text-transform: uppercase;
 		    font-size: 15px;
 		    padding-left: 50px;
-		    margin-top: 14px;
+		    margin-top: 9px;
 		    line-height: 2;
 		    font-family: @OpenSans;
 
@@ -609,7 +630,7 @@ button {
 				width: 262px;
 				height: 48px;
 				border-radius: 30px;
-				margin-top: 8px;
+				margin-top: 7px;
 			}
 		}
     }
@@ -618,10 +639,27 @@ button {
 
     &.pre-footer {
     	margin-bottom: 0;
-    	height: 216px;
+    	height: 248px;
 
     	.left-side {
-    		padding-top: 40px;
+    		padding-top: 38px;
+    		padding-left: 92px;
+
+    		.additional__text {
+    			margin-top: 21px;
+    			line-height: 2.2;
+    			padding-left: 54px;
+
+    			&:before {
+					content: '';
+					background: url("../img/phone__icon--yellow.png");
+					width: 32px;
+					height: 32px;
+					display: block;
+					position: absolute;
+					margin-left: -48px;
+				}
+    		}
     	}
     }
 }
@@ -798,6 +836,7 @@ button {
 	}
 
 	p {
+		font-family: "MyriadProLight", @OpenSans;
 	}
 }
 
@@ -824,7 +863,7 @@ button {
 
 .years-timeline {
 	padding: 0px;
-    margin-top: 65px;
+    margin-top: 64px;
     min-height: 479px;
 	.ui-tabs-nav {
 		background: url(../img/red__dot.jpg) repeat-x;
@@ -899,16 +938,18 @@ button {
 	}
 
 	.content {
-	    padding-left: 100px;
-	    padding-top: 40px;
+	    padding-left: 60px;
+	    padding-top: 34px;
 	    padding-right: 100px;
 		ul {
 			color: #000000;
 			font-size: 16px;
 			text-align: left;
 			list-style: none;
+			letter-spacing: 0px;
+			line-height: 1.4;
 			li {
-				margin-bottom: 35px;
+				margin-bottom: 29px;
 
 				&:before {
 					content: '—';
@@ -939,61 +980,66 @@ button {
 .contacts {
 
 	.contacts-blocks {
-		margin-top: 60px;
-		display: table;
-		width: 100%;
-		margin-bottom: 115px;
+		margin-top: 49px;width:100%;
+		margin-bottom: 110px;
 		.info {
-			display: table-cell;
 			font-size: 20px;
 			color: #000000;
 			font-family: "MyriadProSemiBold";
 			text-align: center;
 			line-height: 1.5;
 			position: relative;
-			padding-left: 65px;
+			display: inline-block;
+			padding-left: 25px;
 			&.time {
+				float: left;
+				width: 360px;
 				&:before {
 					content: '';
 					background: url("../img/contacts-time__icon.png") no-repeat;
 					width: 32px;
 					height: 32px;
 					position: absolute;
-				    top: 16px;
-				    margin-left: -50px;
+				    top: 18px;
+				    margin-left: -49px;
 				}
 			}
 
 			&.phones {
+				float: left;
+				margin-left: 72px;
+				line-height: 1.6;;
 				&:before {
 					content: '';
 					background: url("../img/contacts-phone__icon.png") no-repeat;
 					width: 32px;
 					height: 32px;
 					position: absolute;
-				    top: 16px;
-				    margin-left: -50px;
+				    top: 18px;
+				    margin-left: -49px;
 				}
 			}
 
 			&.adress {
 				text-align: left;
+				float: left;
+				margin-left: 89px;
+				line-height: 1.6;
 				&:before {
 					content: '';
 					background: url("../img/contacts-geo__icon.png") no-repeat;
 					width: 32px;
 					height: 32px;
 					position: absolute;
-				    top: 16px;
-				    margin-left: -50px;
+				    top: 18px;
+				    margin-left: -47px;
 				}
 			}
 		}	
 	}
 
 	h3 {
-		margin-top: 48px;
-		font-size: 32px;
+		margin-top: 49px;;
 	}
 
 	p {
@@ -1010,8 +1056,8 @@ button {
 
 .footer {
     background: #5e0326;
-    height: 50px;
-    padding-top: 40px;
+    height: 52px;
+    padding-top: 32px;
 
 	.copyright {
 		float: left;
@@ -1019,10 +1065,12 @@ button {
 		font-size: 14px;
 		font-family: "MyriadProRegular";
 		text-align: left;
+		letter-spacing: 0px;
 	}
 
 	.developer-logo {
 		float: right;
+		margin-top: -5px;
 	}
 }
 
@@ -1322,1945 +1370,3 @@ button {
 
 /*=====  End of POPUPS  ======*/
 
-
-// Объект новостройка и вторичка
-
-@font-face {
-    font-family: MyriadProRegular;
-    src: url(../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/MyriadProRegular/MyriadProRegular.woff) format("woff"),url(../fonts/MyriadProRegular/MyriadProRegular.ttf) format("truetype");
-    font-style: normal;
-    font-weight: 400;
-}
-
-
-// Объект новостройка и вторичка
-
-@font-face {
-    font-family: MyriadProBold;
-    src: url(../fonts/MyriadProBold/MyriadProBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MyriadProBold/MyriadProBold.woff) format("woff"),url(../fonts/MyriadProBold/MyriadProBold.ttf) format("truetype");
-    font-style: normal;
-    font-weight: 400;
-}
-
-
-// Объект новостройка и вторичка
-
-@font-face {
-    font-family: MyriadProItalic;
-    src: url(../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix) format("embedded-opentype"),url(../fonts/MyriadProItalic/MyriadProItalic.woff) format("woff"),url(../fonts/MyriadProItalic/MyriadProItalic.ttf) format("truetype");
-    font-style: normal;
-    font-weight: 400;
-}
-
-
-// Объект новостройка и вторичка
-
-@font-face {
-    font-family: MyriadProSemiBold;
-    src: url(../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MyriadProSemiBold/MyriadProSemiBold.woff) format("woff"),url(../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf) format("truetype");
-    font-style: normal;
-    font-weight: 400;
-}
-
-
-// Объект новостройка и вторичка
-
-body {
-    font-family: MyriadProRegular;
-    letter-spacing: 1px;
-}
-
-
-// Объект новостройка и вторичка
-
-.container-fixed {
-    width: 1140px;
-    margin: 0 auto;
-}
-
-
-// Объект новостройка и вторичка
-
-.container-fixed.info-block {
-    text-align: center;
-}
-
-
-// Объект новостройка и вторичка
-
-.container-fixed.info-block h3 {
-    text-transform: uppercase!important;
-    color: #000;
-    font-size: 32px;
-    font-family: MyriadProBold;
-}
-
-
-// Объект новостройка и вторичка
-
-.container-fixed.info-block p {
-    color: #000;
-    font-size: 16px;
-    text-transform: uppercase!important;
-    font-family: MyriadProRegular;
-}
-
-
-// Объект новостройка и вторичка
-
-.transition--effect {
-    transition: all .2s;
-}
-
-
-// Объект новостройка и вторичка
-
-.red--btn {
-    background: #951a49;
-    color: #ffca28;
-    border: none;
-    font-family: MyriadProSemiBold;
-    transition: all .2s;
-    letter-spacing: 1px;
-}
-
-
-// Объект новостройка и вторичка
-
-.red--btn:hover {
-    background: #ffca28;
-    color: #951a49;
-}
-
-
-// Объект новостройка и вторичка
-
-.red--btn.invert--btn {
-    background: #ffca28;
-    color: #951a49;
-}
-
-
-// Объект новостройка и вторичка
-
-.red--btn.invert--btn:hover {
-    background: #951a49;
-    color: #ffca28;
-}
-
-
-// Объект новостройка и вторичка
-
-.red--btn--radius {
-    border-radius: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.red--text {
-    color: #951a49;
-}
-
-
-// Объект новостройка и вторичка
-
-.right-align {
-    text-align: right;
-}
-
-
-// Объект новостройка и вторичка
-
-.left-align {
-    text-align: left;
-}
-
-
-// Объект новостройка и вторичка
-
-a {
-    transition: all .2s;
-}
-
-
-// Объект новостройка и вторичка
-
-a:hover {
-    text-decoration: none;
-}
-
-
-// Объект новостройка и вторичка
-
-input {
-    outline: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-button {
-    outline: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.header {
-    height: 88px;
-    background: linear-gradient(to right, #951a49 0, #951a49 50%, #e6e8e9 50%, #e6e8e9 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#951a49', endColorstr='#e6e8e9', GradientType=1);
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed {
-    background: #e9eaea;
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed .logo {
-    width: 109px;
-    float: left;
-    height: 88px;
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed .logo .logo__link {
-    display: block;
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed .company-slogan {
-    width: 300px;
-    float: left;
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed .company-slogan .slogan__text {
-    font-family: MyriadProBold;
-    text-transform: uppercase;
-    padding-top: 16px;
-    text-align: left;
-    padding-left: 23px;
-    display: block;
-    font-size: 19.2px;
-    line-height: 1.5;
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed .req-call {
-    width: 440px;
-    float: left;
-    margin-top: 24px;
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed .req-call .req-call__btn {
-    font-size: 14px;
-    border-radius: 40px;
-    text-transform: uppercase;
-    height: 40px;
-    width: 199px;
-    text-align: center;
-    float: right;
-    margin-right: 32px;
-    white-space: nowrap;
-    letter-spacing: 1.3px;
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed .phone {
-    width: 291px;
-    padding-top: 29px;
-    position: relative;
-    text-align: right;
-    float: left;
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed .phone .phone__number {
-    font-family: MyriadProSemiBold;
-    font-size: 23px;
-    text-transform: uppercase;
-    display: block;
-    float: right;
-}
-
-
-// Объект новостройка и вторичка
-
-.header .container-fixed .phone .phone__number:before {
-    content: '';
-    background: url(../img/phone__icon--yellow.png);
-    width: 32px;
-    height: 32px;
-    display: block;
-    position: absolute;
-    margin-left: -49px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner {
-    margin-bottom: 88px;
-    position: relative;
-    background: url(../img/banner__img.jpg) no-repeat #1E2834;
-    width: 100%;
-    height: 537px;
-    max-height: 537px;
-    background-size: cover;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .banner__img {
-    width: 100%;
-    height: 537px;
-    max-height: 537px;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .banner-nav {
-    background: rgba(255,255,255,.45);
-    height: 56px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .banner-nav .banner-menu {
-    padding: 0;
-    list-style: none;
-    display: table;
-    margin: 0 auto;
-    height: 100%;
-    width: 1140px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .banner-nav .banner-menu .menu__item {
-    display: table-cell;
-    vertical-align: middle;
-    padding-top: 4px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .banner-nav .banner-menu .menu__item.left-align {
-    padding-left: 25px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .banner-nav .banner-menu .menu__item.right-align {
-    padding-right: 20px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .banner-nav .banner-menu .menu__item .menu__link {
-    color: #fff;
-    font-size: 12px;
-    font-family: MyriadProSemiBold;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .banner-nav .banner-menu .menu__item .menu__link:hover {
-    color: #f3bb11;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .banner-nav .banner-menu .menu__item .menu__link:active {
-    color: #f3bb11;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed {
-    position: relative;
-    height: 100%;
-    font-family: MyriadProRegular;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .right-block {
-    right: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .left-block {
-    left: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed h1 {
-    color: #fff;
-    font-size: 64px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    margin-top: 0;
-    line-height: 1.2;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed h3 {
-    color: #fff;
-    font-size: 44px;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-weight: 400;
-    font-family: 'Open Sans',sans-serif;
-    padding-left: 4px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed p {
-    font-size: 14px;
-    color: #fff;
-    font-family: 'Open Sans',sans-serif;
-    line-height: 1.7;
-    margin: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .text-block {
-    position: absolute;
-    left: 0;
-    top: 131px;
-    width: 500px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .text-block .text-block__btn {
-    margin-top: 51px;
-    border-radius: 40px;
-    text-transform: uppercase;
-    font-size: 16px;
-    white-space: nowrap;
-    width: 397px;
-    height: 48px;
-    margin-left: 1px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .text-block p {
-    margin-top: 12px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .stock-block {
-    position: absolute;
-    top: 114px;
-    width: 368px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .stock-block .stock-block__btn {
-    border-radius: 40px;
-    text-transform: uppercase;
-    width: 132px;
-    height: 40px;
-    margin-top: 13px;
-    margin-left: 9px;
-    font-size: 16px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .stock-block .title:after {
-    content: '';
-    background: url(../img/banner-news__icon.png) no-repeat;
-    width: 29px;
-    height: 33px;
-    position: absolute;
-    top: 13px;
-    margin-left: 19px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .news-block {
-    position: absolute;
-    top: 312px;
-    width: 368px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .news-block .title {
-    padding-left: 7px;
-    font-size: 43px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .news-block p {
-    line-height: 1.8;
-    padding-left: 10px;
-    font-size: 14px;
-    padding-top: 2px;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .news-block .more__link {
-    font-size: 14px;
-    color: #ffca28;
-    padding-left: 11px;
-    margin-top: 4px;
-    display: block;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .news-block .more__link:hover {
-    color: #6a6a6a;
-}
-
-
-// Объект новостройка и вторичка
-
-.banner .container-fixed .news-block .more__link:active {
-    color: #6a6a6a;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map {
-    text-align: center;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map h2 {
-    color: #000;
-    font-family: MyriadProBold;
-    font-size: 32px;
-    text-transform: uppercase;
-    letter-spacing: 3.2px;
-    margin-bottom: 24px;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map p {
-    color: #000;
-    font-size: 14px;
-    font-family: MyriadProRegular;
-    text-transform: uppercase;
-    line-height: 1.8;
-    margin: 0;
-    letter-spacing: 2.5px;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map p .red--text {
-    text-decoration: underline;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map a {
-    color: #951a49;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map .ui-tabs {
-    padding: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map .ui-tabs .ui-tabs-nav {
-    display: table;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-    background: #eceff1;
-    border-radius: 20px;
-    margin-top: 54px;
-    margin-bottom: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map .ui-tabs .ui-tabs-nav li {
-    margin: 0;
-    padding: 0 10px;
-    height: 40px;
-    line-height: 2.5;
-    letter-spacing: 1px;
-    outline: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
-    color: #000;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-family: MyriadProRegular;
-    outline: 0;
-    float: none;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-    border-radius: 20px;
-    margin: 0;
-    background: #951a49;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
-    color: #fff;
-}
-
-
-// Объект новостройка и вторичка
-
-.property-map .ui-tabs .ui-tabs-panel {
-    padding: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form {
-    background: url(../img/application-form-bg.jpg) #951143;
-    height: 248px;
-    padding-top: 47px;
-    width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-bottom: 88px;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .left-side {
-    width: 605px;
-    float: left;
-    padding-left: 95px;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .left-side .title {
-    font-size: 50px;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Open Sans',sans-serif;
-    text-align: left;
-    line-height: 1.4;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .left-side .additional__text {
-    color: #ffca28;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding-left: 50px;
-    margin-top: 14px;
-    line-height: 2;
-    font-family: 'Open Sans',sans-serif;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .left-side .additional__text:before {
-    content: '';
-    background: url(../img/phone__icon--yellow.png);
-    width: 32px;
-    height: 32px;
-    display: block;
-    position: absolute;
-    margin-left: -47px;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side {
-    width: 358px;
-    float: right;
-    margin-top: 16px;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form input::-webkit-input-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 2;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form input::-moz-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form input:-moz-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form input:-ms-input-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 2;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form input:focus::-webkit-input-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form input:focus::-moz-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form input:focus:-moz-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form input:focus:-ms-input-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form .text__field {
-    width: 262px;
-    height: 38px;
-    background: #fff;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 16px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form .right-side .application__form .req-call__btn {
-    width: 262px;
-    height: 48px;
-    border-radius: 30px;
-    margin-top: 8px;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form.pre-footer {
-    margin-bottom: 0;
-    height: 216px;
-}
-
-
-// Объект новостройка и вторичка
-
-.application-form.pre-footer .left-side {
-    padding-top: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers {
-    position: relative;
-    margin-top: 80px;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-carousel {
-    margin-top: 60px;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers #owl-demo .item img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .owl-theme .owl-controls .owl-page span {
-    background: url(../img/pagination-element.png) no-repeat;
-    width: 12px;
-    height: 12px;
-    opacity: 1;
-    transition: all .2s;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .owl-theme .owl-controls .owl-page span:hover {
-    background: url(../img/pagination-element__active.png) no-repeat;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .owl-theme .owl-controls .owl-page.active span {
-    background: url(../img/pagination-element__active.png) no-repeat;
-    width: 12px;
-    height: 12px;
-    opacity: 1;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .owl-theme .owl-controls .owl-buttons .owl-prev {
-    background: url(../img/nav__btn__prev.png);
-    width: 64px;
-    height: 64px;
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    position: absolute;
-    top: 192px;
-    left: -101px;
-    transition: all .2s;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .owl-theme .owl-controls .owl-buttons .owl-prev:hover {
-    opacity: .9;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .owl-theme .owl-controls .owl-buttons .owl-next {
-    background: url(../img/nav__btn__next.png);
-    width: 64px;
-    height: 64px;
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    position: absolute;
-    top: 192px;
-    right: -100px;
-    transition: all .2s;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .owl-theme .owl-controls .owl-buttons .owl-next:hover {
-    opacity: .9;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person {
-    border-radius: 2px;
-    overflow: hidden;
-    background: #eceff1;
-    width: 555px;
-    height: 208px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    float: left;
-    text-align: left;
-    transition: all .2s;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person:nth-child(2n+2) {
-    margin-right: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person:hover {
-    background: #e6eaed;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .photo-container {
-    border-radius: 2px;
-    overflow: hidden;
-    width: 208px;
-    height: 208px;
-    margin-right: 32px;
-    float: left;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .photo-container .photo__img {
-    max-width: 208px;
-    max-height: 208px;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .info-container {
-    float: left;
-    width: 285px;
-    padding-right: 30px;
-    padding-top: 25px;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .info-container .fio {
-    font-size: 20px;
-    color: #000;
-    font-family: MyriadProSemiBold;
-    margin-bottom: 10px;
-    line-height: 1;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .info-container .post {
-    font-size: 12px;
-    color: #5a5a5a;
-    font-family: MyriadProRegular;
-    margin-bottom: 7px;
-    letter-spacing: 1px;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .info-container .phones {
-    color: #000;
-    font-size: 14px;
-    font-family: MyriadProSemiBold;
-    line-height: 1.7;
-    margin-bottom: 11px;
-    letter-spacing: 1px;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .info-container .write__to {
-    font-family: MyriadProSemiBold;
-    font-size: 14px;
-    margin-left: 45px;
-    line-height: 2;
-    position: relative;
-    color: #951a49;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .info-container .write__to:before {
-    content: '';
-    background: url(../img/email__icon--yellow.png);
-    width: 32px;
-    height: 32px;
-    display: block;
-    position: absolute;
-    margin-left: 2px;
-    top: -6px;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .info-container .write__to:hover {
-    color: #5a5a5a;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers .managers-list .person .info-container .write__to:active {
-    color: #5a5a5a;
-}
-
-
-// Объект новостройка и вторичка
-
-.our-managers h3 {
-    letter-spacing: 3px;
-    margin-bottom: 24px;
-}
-
-
-// Объект новостройка и вторичка
-
-.timeline-history {
-    background: url(../img/timeline-history-bg.jpg) no-repeat #eceff1;
-    background-position: center bottom;
-    padding-top: 57px;
-    margin-top: 110px;
-    background-size: cover;
-}
-
-
-// Объект новостройка и вторичка
-
-.timeline-history h3 {
-    letter-spacing: 3px;
-    margin-bottom: 24px;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline {
-    padding: 0;
-    margin-top: 65px;
-    min-height: 479px;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav {
-    background: url(../img/red__dot.jpg) repeat-x;
-    background-position: 0 6px;
-    padding: 0!important;
-    display: table;
-    margin: 0 auto!important;
-    position: relative;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav .gray-cover {
-    height: 1px;
-    background: #eceff1;
-    width: 25px;
-    position: absolute;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav .gray-cover.left {
-    top: 6px;
-    left: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav .gray-cover.right {
-    top: 6px;
-    right: 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav li {
-    outline: 0;
-    margin: 0 0!important;
-    padding: 0;
-    display: table-cell;
-    transition: all .2s;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav li .point {
-    background: url(../img/pagination-element.png) no-repeat #fff;
-    width: 12px;
-    height: 12px;
-    margin: 0 auto;
-    border-radius: 5px;
-    transition: all .2s;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav li .point:hover {
-    background: url(../img/pagination-element__active.png) no-repeat #fff;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav li .year {
-    margin-top: 10px;
-    color: #606162;
-    font-size: 16px;
-    font-family: MyriadProBold;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav li:hover .point {
-    background: url(../img/pagination-element__active.png) no-repeat #fff;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-nav li.ui-tabs-active .point {
-    background: url(../img/pagination-element__active.png) no-repeat #fff;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .ui-tabs-anchor {
-    outline: 0;
-    padding: 0 12px!important;
-    margin: 0!important;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .content {
-    padding-left: 100px;
-    padding-top: 40px;
-    padding-right: 100px;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .content ul {
-    color: #000;
-    font-size: 16px;
-    text-align: left;
-    list-style: none;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .content ul li {
-    margin-bottom: 35px;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .content ul li:before {
-    content: '—';
-    color: #951a49;
-    margin-right: 10px;
-}
-
-
-// Объект новостройка и вторичка
-
-.years-timeline .content p {
-    color: #000;
-    font-size: 16px;
-    text-transform: none!important;
-    text-align: left;
-}
-
-
-// Объект новостройка и вторичка
-
-.contacts h3 {
-    margin-top: 49px;
-}
-
-
-// Объект новостройка и вторичка
-
-.contacts .contacts-blocks {
-    margin-top: 60px;
-    display: table;
-    width: 100%;
-    margin-bottom: 115px;
-}
-
-
-// Объект новостройка и вторичка
-
-.contacts .contacts-blocks .info {
-    display: table-cell;
-    font-size: 20px;
-    color: #000;
-    font-family: MyriadProSemiBold;
-    text-align: center;
-    line-height: 1.5;
-    position: relative;
-    padding-left: 65px;
-}
-
-
-// Объект новостройка и вторичка
-
-.contacts .contacts-blocks .info.time:before {
-    content: '';
-    background: url(../img/contacts-time__icon.png) no-repeat;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 16px;
-    margin-left: -50px;
-}
-
-
-// Объект новостройка и вторичка
-
-.contacts .contacts-blocks .info.phones:before {
-    content: '';
-    background: url(../img/contacts-phone__icon.png) no-repeat;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 16px;
-    margin-left: -50px;
-}
-
-
-// Объект новостройка и вторичка
-
-.contacts .contacts-blocks .info.adress {
-    text-align: left;
-}
-
-
-// Объект новостройка и вторичка
-
-.contacts .contacts-blocks .info.adress:before {
-    content: '';
-    background: url(../img/contacts-geo__icon.png) no-repeat;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 16px;
-    margin-left: -50px;
-}
-
-
-// Объект новостройка и вторичка
-
-.footer {
-    background: #5e0326;
-    height: 50px;
-    padding-top: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.footer .copyright {
-    float: left;
-    color: #cb4e7f;
-    font-size: 14px;
-    font-family: MyriadProRegular;
-    text-align: left;
-}
-
-
-// Объект новостройка и вторичка
-
-.footer .developer-logo {
-    float: right;
-}
-
-
-// Объект новостройка и вторичка
-
-.fancybox-skin {
-    padding: 0!important;
-    box-shadow: none!important;
-    overflow: hidden;
-}
-
-
-// Объект новостройка и вторичка
-
-.fancybox-close {
-    background: url(../img/close__btn.png) no-repeat;
-    width: 23px;
-    height: 23px;
-    top: 40px;
-    right: 30px;
-}
-
-
-// Объект новостройка и вторичка
-
-.fancybox-close:hover {
-    top: 35px;
-}
-
-
-// Объект новостройка и вторичка
-
-.fancybox-overlay {
-    background: rgba(59,0,23,.7)!important;
-}
-
-
-// Объект новостройка и вторичка
-
-.popup-window {
-    display: none;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup {
-    width: 680px;
-    height: 310px;
-    border-radius: 5px;
-    background: #fff;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side {
-    background: #eceff1;
-    width: 340px;
-    height: 100%;
-    float: left;
-    text-align: center;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side .title {
-    font-family: MyriadProSemiBold;
-    font-size: 32px;
-    color: #951a49;
-    margin-bottom: 35px;
-    margin-top: 35px;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side input::-webkit-input-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 2;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side input::-moz-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side input:-moz-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side input:-ms-input-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 2;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side input:focus::-webkit-input-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side input:focus::-moz-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side input:focus:-moz-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side input:focus:-ms-input-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side .text__field {
-    width: 262px;
-    height: 40px;
-    background: #fff;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 16px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .left-side .req-call__btn {
-    width: 262px;
-    height: 48px;
-    border-radius: 30px;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .right-side {
-    width: 300px;
-    float: left;
-    padding-left: 40px;
-    text-align: left;
-    padding-top: 100px;
-    line-height: 2;
-}
-
-
-// Объект новостройка и вторичка
-
-.req-call-popup .right-side p {
-    margin: 0;
-    color: #55626a;
-    font-size: 16px;
-    font-family: MyriadProRegular;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup {
-    width: 1010px;
-    border-radius: 5px;
-    background: #eceff1;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side {
-    width: 595px;
-    height: 100%;
-    float: left;
-    text-align: left;
-    padding-left: 30px;
-    padding-right: 45px;
-    padding-bottom: 20px;
-    background: #fff;
-    min-height: 400px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .title {
-    font-family: MyriadProSemiBold;
-    font-size: 32px;
-    color: #951a49;
-    margin-bottom: 35px;
-    margin-top: 35px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side p {
-    color: #55626a;
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .map > ymaps {
-    border-radius: 10px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .options-tables {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .options-tables .options__table {
-    width: 50%;
-    float: left;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .options-tables .options__table.table-n1 {
-    width: 45%;
-    margin-right: 5%;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .options-tables .options__table tr {
-    border-top: 1px solid #f5f7f8;
-    border-bottom: 1px solid #f5f7f8;
-    transition: all .2s;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .options-tables .options__table tr:nth-child(even) {
-    background: #f5f7f8;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .options-tables .options__table tr td {
-    padding: 10px 0;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .options-tables .options__table tr .name {
-    color: #55626a;
-    font-size: 10px;
-    font-family: MyriadProSemiBold;
-    text-transform: uppercase;
-    padding-left: 10px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .options-tables .options__table tr .value {
-    color: #55626a;
-    font-size: 12px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .left-side .options-tables .options__table tr:hover:nth-child(odd) {
-    background: #fafafa;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side {
-    width: 300px;
-    float: left;
-    padding-left: 40px;
-    text-align: left;
-    padding-top: 110px;
-    line-height: 2;
-    height: 100%;
-    padding-bottom: 20px;
-    background: #eceff1;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side p {
-    margin: 0;
-    color: #55626a;
-    font-size: 14px;
-    font-family: MyriadProRegular;
-    margin-bottom: 20px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side input::-webkit-input-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 2;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side input::-moz-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side input:-moz-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 40px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side input:-ms-input-placeholder {
-    opacity: 1;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 2;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side input:focus::-webkit-input-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side input:focus::-moz-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side input:focus:-moz-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side input:focus:-ms-input-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease;
-    color: #8b737c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side .text__field {
-    width: 262px;
-    height: 40px;
-    background: #fff;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 16px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .right-side .req-call__btn {
-    width: 262px;
-    height: 48px;
-    border-radius: 30px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .lightSlider li img {
-    width: 100%;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .lSSlideOuter .lSPager.lSGallery img {
-    border-radius: 5px;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .lSSlideOuter.vertical .lSAction > .lSPrev {
-    background: url(../img/gallery-nav-prev.png) no-repeat;
-    width: 34px;
-    height: 64px;
-    bottom: auto;
-    top: 120px;
-    left: 14px;
-    opacity: 1;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .lSSlideOuter.vertical .lSAction > .lSNext {
-    background: url(../img/gallery-nav-next.png) no-repeat;
-    width: 34px;
-    height: 64px;
-    bottom: auto;
-    top: 120px;
-    right: 0;
-    opacity: 1;
-    left: auto;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .lSSlideOuter .lSPager.lSGallery li {
-    position: relative;
-    cursor: pointer;
-}
-
-
-// Объект новостройка и вторичка
-
-.object-popup .lSSlideOuter .lSPager.lSGallery li.active:before, .object-popup .lSSlideOuter .lSPager.lSGallery li:hover:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: rgba(149,26,73,.5);
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
