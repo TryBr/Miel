@@ -17,6 +17,7 @@ module.exports = function(grunt) {
 				"js/vendor/jquery.fancybox.js",   
 				"js/vendor/lightslider.min.js",
 				"js/vendor/jquery-ui.min.js",
+				"js/vendor/jquery.stellar.js",
 				"js/main.js"
 
 				],
